@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="centered">
+        <a href="http://192.168.50.144:5000/" class="btn_25"><span>HOME</span></a>
+    </div>
+    
+    <div class="left-align vertical-container vertical-text">
+            <h2>Point Get!!!!</h2>
+            <img src="{{ url_for('static', filename='images/QR.png') }}" alt="Image" width="160px" height="160px">
+
+    </div>
+
+    <div class="fixed-icon">
+        <a href="https://twitter.com/meijo_univ?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="btn btn-sns btn-sns--twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        &nbsp; <!-- アイコンの後に空白を挿入 -->
+
+        <a href="https://www.youtube.com/@MeijoUniv" target="_blank" class="btn btn-sns btn-sns--youtube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        &nbsp; <!-- アイコンの後に空白を挿入 -->
+
+        <a href="https://www.instagram.com/meijo_university/" target="_blank" class="btn btn-sns btn-sns--instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        &nbsp; <!-- アイコンの後に空白を挿入 -->
+        
+        <a href="http://www.garbage-tracker.com/" target="_blank" class="btn btn--orange btn-c"><i class="fa fas fa-envelope"></i>お問い合わせはこちら</a>
+    </div>
+
+    <header>
+        <h1>
+            <div class="centered-svg">
+                <i class="fa-solid fa-trash"></i>
+                &nbsp; <!-- アイコンの後に空白を挿入 -->
+                Garbage Tracker
+                &nbsp; <!-- 空白を挿入 -->
+                <i class="fa-solid fa-trash"></i>
+            </div>
+        </h1> <!-- タイトルバー内のテキスト -->
+        <div class="title">Grabage.Inc</div> <!-- タイトルバー内のテキスト -->
+    </header>
+
+    <div id="image-container">
+        <img src="{{ url_for('static', filename='images/gomi_mark01_moeru.png') }}" alt="Image" width="160px" height="160px">
+    </div>
+
+</body>
+</html>
