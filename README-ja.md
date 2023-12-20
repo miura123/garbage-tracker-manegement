@@ -36,5 +36,5 @@ python app.py
 3. Spresense用のSDカードにgarbage_recognition内の「model.nnb」を書き込む。
 
 ## 配線方法
-下図に従い、各センサ類を繋げてください。
+図に従い、各センサ類を繋げてください。
 <img src="docs/wiring.png" height="400">
