@@ -13,6 +13,12 @@ Additionally, it constantly monitors the amount of garbage using distance sensor
 
 日本語の説明は[こちら](README-ja.md)
 
+## Result
+When you press the 'PUSH' button displayed on the screen, it identifies the trash in front of the camera.<br>
+The execution result is as follows:<br>
+<img src="docs/home.png" height="200"><br>
+<img src="docs/pet.png" height="200">     <img src="docs/moeru.png" height="200">
+
 ## Requirement
 ### Hardware
 ・Raspberry Pi 4<br>
