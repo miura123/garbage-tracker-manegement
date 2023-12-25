@@ -16,34 +16,22 @@ def home():
 @app.route('/button_clicked', methods=['POST','GET'])
 def button_clicked():
     
-    print('aaaaaaaaaaaa')
     current_state = GPIO.input(GPIO_PIN)
     print(current_state)
     new_state = not current_state
     GPIO.output(GPIO_PIN, new_state)
-    print('bbbbbbbbbbbbb')
-    #time.sleep(5)
-    ser = serial.Serial('/dev/ttyUSB1',115200,timeout=None)
+    time.sleep(2)
+    
+    ser = serial.Serial('/dev/ttyUSB0',115200,timeout=None)
     serial_data = ser.readline().decode('shift-jis').strip()
-    """
+    
     while(1):
         # シリアル通信からデータを受信
         ser = serial.Serial('/dev/ttyUSB1',115200,timeout=None)
         serial_data = ser.readline().decode('shift-jis').strip()
-        #time.sleep(0.2)
+        time.sleep(0.2)
 
-        print("serial_data:",serial_data)
-        if serial_data == "0" or serial_data == "1":
-            print("gfgfgfgfgfg")
-            break
-    """
-    print('')
-    print('')
-    print('')
-    print(serial_data)
-    print('')
-    print('')
-    print('')
+
     
     if serial_data == "0":
         html_name = "index_moeru.html"
@@ -54,7 +42,7 @@ def button_clicked():
 
     print(html_name)
     
-    return render_template(html_name)
+    return render_template("index_pet.html")
     
 def GPIO_setup():
     # GPIOのセットアップ

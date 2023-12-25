@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="centered">
-        <a id="myButton" href="http://192.168.50.144:5000/button_clicked" class="btn btn--yellow btn--circle center-button">PUSH</a>
+        <a id="myButton" href="http://127.0.0.1:5000/button_clicked" class="btn btn--yellow btn--circle center-button">PUSH</a>
         <div class="button-text center-button">撮影ボタン</div>
         <script>
             $(document).ready(function() {
@@ -52,9 +52,7 @@
         <div class="title">Grabage.Inc</div> <!-- タイトルバー内のテキスト -->
     </header>
 
-    <div id="image-container">
-        <img src="{{ url_for('static', filename='images/camera_man_boy.png') }}" alt="Image" width="160px" >
-    </div>
+
 
 </body>
 </html>

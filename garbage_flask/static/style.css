@@ -77,7 +77,7 @@ body{
 /* 画面左側に配置するスタイル */
 .left-align {
   position: absolute;
-  top: 300px; /* ボタンの上部に配置するための適切な位置 */
+  top: 100px; /* ボタンの上部に配置するための適切な位置 */
   margin-right: 1300px; /* 右側の余白を最大化 */
   margin-left: 10%; /* 左側の余白を設定 */
 }
