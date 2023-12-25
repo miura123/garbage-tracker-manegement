@@ -42,7 +42,7 @@ def button_clicked():
 
     print(html_name)
     
-    return render_template("index_pet.html")
+    return render_template(html_name)
     
 def GPIO_setup():
     # GPIOのセットアップ
